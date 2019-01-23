@@ -21,12 +21,12 @@
       </ul>
     </nav>
   </header>
-  <main class="main-gallery">
-    <header class="main-header main-gallery__header">
-      <h1 class="main__title main-gallery__title">Фотографии пользователей</h1>
+  <main class="main-content main-gallery">
+    <header class="main-content__header main-gallery__header">
+      <h1 class="main-content__title main-gallery__title">Фотографии пользователей</h1>
     </header>
     <section class="gallery">
-      <p class="main__description gallery__description--top">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
+      <p class="gallery__description gallery__description--top">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
       <h2 class="visually-hidden">Галлерея фотографий пользователей</h2>
       <article class="post">
         <h3 class="visually-hidden">Пост пользователя Анна</h3>
@@ -164,29 +164,29 @@
     </section>
     <section class="user-post">
       <h2 class="visually-hidden">Опубликуйте свою фотографию</h2>
-      <p class="main__description gallery__description--user">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
+      <p class="gallery__description gallery__description--user">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
       <figure class="user-post__picture">
         <img src="#" alt="Ваша фотография" class="user-post__image">
       </figure>
-      <ul class="edit__list user-post--edit__list">
-        <li class="edit__item">
-          <button class="edit_button" type="button">Обрезка</button>
+      <ul class="user-post__list user-post__list--edit">
+        <li class="user-post__item">
+          <button class="user-post__button" type="button">Обрезка</button>
         </li>
-        <li class="edit__item">
-          <button class="edit_button" type="button">Цвето-коррекция</button>
+        <li class="user-post__item">
+          <button class="user-post__button" type="button">Цвето-коррекция</button>
         </li>
-        <li class="edit__item">
-          <button class="edit_button" type="button">Яркость</button>
+        <li class="user-post__item">
+          <button class="user-post__button" type="button">Яркость</button>
         </li>
       </ul>
-      <div class="range-field">
+      <div class="range-field user-post__range-field">
         <div class="range-field__scale">
           <div class="range-field__bar"></div>
         </div>
         <button class="range-field__toggle"></button>
       </div>
-      <button class="button button--user-post">Запостить</button>
-      <button class="button button--user-cancel">Отмена</button>
+      <button class="button range-field__button--post">Запостить</button>
+      <button class="button range-field__button--cancel">Отмена</button>
     </section>
   </main>
   <footer class="page-footer">

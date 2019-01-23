@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 
 <body>
@@ -23,22 +24,22 @@
     </nav>
   </header>
   <main class="page-main">
-    <article class="download">
+    <article class="downloads">
       <h2 class="visually-hidden">Возможные версии для скачивания</h2>
-      <div class="download--wrapper">
+      <div class="downloads--wrapper">
         <a href="#" class="button button--download">Скачать приложение</a>
-        <ul class="download__list platform__list">
-          <li class="download__item platform__item">
+        <ul class="downloads__list platform__list">
+          <li class="downloads__item platform__item">
             <img src="#" alt="платформа apple" class="platform__item--image">
           </li>
-          <li class="download__item platform__item">
+          <li class="downloads__item platform__item">
             <img src="#" alt="платформа android" class="platform__item--image">
           </li>
-          <li class="download__item platform__item">
+          <li class="downloads__item platform__item">
             <img src="#" alt="платформа windows" class="platform__item--image">
           </li>
         </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OC X, Windows 8</p>
+        <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OC X, Windows 8</p>
       </div>
     </article>
     <section class="advantages">
@@ -78,7 +79,7 @@
     </section>
     <section class="packages">
       <h2 class="visually-hidden">Доступные пакеты</h2>
-      <div class="packages__wrapper slider-item">
+      <section class="packages__item slider__item">
         <h3 class="packages__title">
           <b class="packages__title--name">Стандарт</b>
           <span class="packages__title--price">3,99 USD</span>
@@ -97,7 +98,7 @@
             <span class="packages__item--status packages__item--status-disabled">Недоступно</span>
           </li>
         </ul>
-      </div>
+      </section>
       <p class="packages__toggles slider__toggles">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
@@ -122,8 +123,8 @@
           </li>
         </ul>
       </div>
-      <div class="map__wrapper">
-        <img src="#" alt="Карта с нашим адресом">
+      <div class="contacts__map--wrapper">
+        <img class="contacts__map" src="#" alt="Карта с нашим адресом">
       </div>
     </section>
   </main>
