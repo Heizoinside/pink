@@ -1,14 +1,22 @@
 .page-header {
-  position: relative;
-  background-image:url(../img/back-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  width:320px;
-  height: 462px;
-  background-color: #1d2631;
-  overflow: hidden;
+  width:100%;
 }
-.page-header__hand {
-  position: absolute;
-  bottom:-20px;
+.page-header__wrapper {
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+}
+@media (min-width: @desktop) {
+  .page-header {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    background-color: rgba(0,0,0,0.3);
+    box-sizing: border-box;
+  }
+  .page-header__wrapper {
+    width:940px;
+    margin:0 auto;
+    box-sizing: border-box;
+    }
 }
