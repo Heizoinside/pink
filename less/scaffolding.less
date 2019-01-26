@@ -25,3 +25,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+@media (min-width: @tablet) {
+  .container {
+    width: 100%;
+    min-width: 620px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .container {
+    width: 100%;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

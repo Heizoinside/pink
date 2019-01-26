@@ -1,29 +1,113 @@
 .downloads {
-  background-color: #1d2631;
   margin:0;
+  background-color: #1d2631;
+  position: relative;
 }
-.background-pic {
+.downloads__background-pic {
   height:462px;
-  background-image: url("../img/bg-back-tablet@1x.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/bg-back-tablet@1x.jpg") 55% 0% no-repeat;
   width:100%;
-  background-position: top center;
 }
-@media (min-width: @desktop) {
-  .background-pic {
-      background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
+.downloads__background-hand {
+  bottom:0;
+  position: absolute;
+  width:65%;
+}
+.downloads__inner {
+  background-color: #1d2631;
+  position: relative;
+}
+.downloads--wrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.downloads__title {
+  margin:0;
+  padding:0;
+  font-size:0;
 }
 .downloads__list {
-  margin:0;
-  padding:0;
-  list-style: none;
+margin:0;
+padding:0;
+list-style: none;
 }
 .downloads__text {
-  line-height: 24px;
-  font-weight: 300;
-  color:#c3c5c8;
-  text-align: center;
-  padding:0;
-  margin:0;
+line-height: 24px;
+font-weight: 300;
+color:#c3c5c8;
+text-align: center;
+padding:0;
+margin:0;
+}
+@media (max-width: @mobile-only) {
+    .downloads__background-hand {
+    background:url("../img/hand-mobile.png") 80% 50% no-repeat;
+    left:0;
+    height:290px;
+    width:80%;
+  }
+  .downloads__text  {
+
+  }
+}
+@media (min-width: @tablet) {
+  .downloads__title {
+    font-size:40px;
+    line-height: 48px;
+    font-weight: 300;
+    width:210px;
+    text-align: center;
+    color:#fff;
+  }
+  .downloads__background-pic {
+    height:730px;
+  }
+  .downloads__background-hand {
+    right:50px;
+    background:url("../img/hand-tablet.png") 80% 50% no-repeat;
+    height:550px;
+  }
+  .downloads--wrapper {
+    min-height: 415px;
+  }
+  .downloads__inner  {
+    position: absolute;
+    bottom:115px;
+    left:0;
+    width:50%;
+    background-color: transparent;
+  }
+  .downloads__text {
+    font-size:18px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+@media (min-width: @desktop) {
+  .downloads__background-pic {
+      height:853px;
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+  .downloads__background-hand {
+    height:650px;
+    right:60px;
+    background:url("../img/hand-desktop.png") 66% 50% no-repeat;
+  }
+  .downloads__inner {
+      width:300px;
+      left:20px;
+      bottom:122px;
+  }
+  .downloads__title {
+    font-size:50px;
+    line-height: 58px;
+    width:240px;
+    padding-bottom:5px;
+  }
+  .downloads--wrapper {
+    min-height: 510px;
+  }
 }

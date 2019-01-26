@@ -3,6 +3,8 @@
   margin:0;
   padding:0;
   list-style: none;
+  position: relative;
+  z-index: 100;
 }
 @media (max-width:@except-desktop) {
   .main-nav--opened .site-list,
@@ -25,6 +27,16 @@
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+  }
+}
+@media (max-width:@mobile-only) {
+  .main-nav--opened .site-list {
+    margin-bottom: -70px;
+}
+}
+@media (min-width:@tablet) {
+  .main-nav--opened .site-list {
+    margin-bottom: -110px;
   }
 }
 @media (min-width:@desktop) {
