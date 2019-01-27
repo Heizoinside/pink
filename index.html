@@ -90,46 +90,77 @@
         </ul>
       </div>
     </section>
-    <section class="reviews">
-      <h2 class="visually-hidden">Отзывы о нас</h2>
-      <div class="reviews__wrapper slider__item">
-        <b class="reviews__author">Николай Петров</b>
-        <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+    <section class="research">
+      <h2 class="visually-hidden">
+        Учёные про эффект нашего приложения
+      </h2>
+      <div class="container">
+        <div class="research__inner">
+          <figure class="research__timer">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+              <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+              <circle cx="50%" cy="57%" r="118" stroke="#d22856" fill="transparent" stroke-width="17" />
+              <text x="80" y="237">24</text>
+            </svg>
+            </svg>
+          </figure>
+          <div class="research__wrapper">
+            <b class="research__effect">Эффект на 24 часа!</b>
+            <p class="research__text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a href="#" class="research__link">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </div>
-      <p class="review__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
     </section>
-    <section class="packages">
-      <h2 class="visually-hidden">Доступные пакеты</h2>
-      <section class="packages__item slider__item">
-        <h3 class="packages__title">
-          <b class="packages__title--name">Стандарт</b>
-          <span class="packages__title--price">3,99 USD</span>
-        </h3>
-        <ul class="packages__list">
-          <li class="packages__item">
-            <p class="packages__item--name">Розовый фильтр</p>
-            <span class="visually-hidden">Доступно</span>
-          </li>
-          <li class="packages__item">
-            <p class="packages__item--name">Смайлики</p>
-            <span class="visually-hidden">Доступно</span>
-          </li>
-          <li class="packages__item">
-            <p class="packages__item--name">Комментарии</p>
-            <span class="visually-hidden">Недоступно</span>
-          </li>
-        </ul>
+    <div class="reviews__layout">
+      <section class="reviews container">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="reviews__wrapper slider__item">
+          <b class="reviews__author">Николай Петров</b>
+          <span class="reviews__prof">25 лет, водитель трамвая</span>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <p class="review__toggles slider__toggles">
+          <span class="slider__toggle slider__toggle--active" type="button">1</span>
+          <span class="slider__toggle" type="button">2</span>
+          <span class="slider__toggle" type="button">3</span>
+        </p>
+        <p class="review__arrows">
+          <span class="review__arrow review__arrow--left" type="button">arrow left</span>
+          <span class="review__arrow review__arrow--right" type="button">arrow right</span>
+        </p>
       </section>
-      <p class="packages__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </section>
+      <section class="packages container">
+        <h2 class="visually-hidden">Доступные пакеты</h2>
+        <section class="packages__item slider__item">
+          <h3 class="packages__title">
+            <b class="packages__title--name">Стандарт</b>
+            <span class="packages__title--price">3,99 USD</span>
+          </h3>
+          <ul class="packages__list">
+            <li class="packages__item">
+              <p class="packages__item--name">Розовый фильтр</p>
+              <span class="visually-hidden">Доступно</span>
+            </li>
+            <li class="packages__item">
+              <p class="packages__item--name">Смайлики</p>
+              <span class="visually-hidden">Доступно</span>
+            </li>
+            <li class="packages__item">
+              <p class="packages__item--name">Комментарии</p>
+              <span class="visually-hidden">Недоступно</span>
+            </li>
+          </ul>
+        </section>
+        <p class="packages__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+    </div>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
