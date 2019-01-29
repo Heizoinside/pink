@@ -3,7 +3,7 @@
   padding-top:40px;
   width:280px;
   margin:0 auto;
-  padding-bottom:104px;
+  padding-bottom:82px;
 }
 .reviews__wrapper {
   display:flex;
@@ -27,10 +27,13 @@
 .review__arrow {
     display:none;
 }
+.reviews__layout {
+  background: linear-gradient(176deg, #ffffff 40%,#ffffff 20%, #f2f2f2 20%);
+}
 @media (min-width: @tablet) {
   .reviews {
     padding-top:20px;
-    padding-bottom:80px;
+    padding-bottom:60px;
   }
   .reviews__author {
     order:2;
@@ -43,8 +46,10 @@
   }
   .reviews__prof {
     display:block;
-    padding-top:5px;
     order:3;
+  }
+  .reviews__layout {
+    background: linear-gradient(176deg, #ffffff 46%,#ffffff 20%, #f2f2f2 20%);
   }
 }
 @media (min-width: @desktop) {
@@ -66,7 +71,7 @@
       font-size: 18px;
       padding-top:2px;
   }
-  .review__toggles span {
+  .review__toggles label {
       display: none;
   }
   .review__arrow {
@@ -89,6 +94,6 @@
     }
   }
   .reviews__layout {
-    background: linear-gradient(175deg, #ffffff 55%,#ffffff 20%, #f2f2f2 20%);
+    background: linear-gradient(176deg, #ffffff 49%,#ffffff 20%, #f2f2f2 20%);
   }
 }

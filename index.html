@@ -120,41 +120,82 @@
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
         <p class="review__toggles slider__toggles">
-          <span class="slider__toggle slider__toggle--active" type="button">1</span>
-          <span class="slider__toggle" type="button">2</span>
-          <span class="slider__toggle" type="button">3</span>
+          <label class="slider__toggle slider__toggle--active">1</label>
+          <label class="slider__toggle">2</label>
+          <label class="slider__toggle">3</label>
         </p>
         <p class="review__arrows">
           <span class="review__arrow review__arrow--left" type="button">arrow left</span>
           <span class="review__arrow review__arrow--right" type="button">arrow right</span>
         </p>
       </section>
-      <section class="packages container">
+      <section class="package container">
         <h2 class="visually-hidden">Доступные пакеты</h2>
-        <section class="packages__item slider__item">
-          <h3 class="packages__title">
-            <b class="packages__title--name">Стандарт</b>
-            <span class="packages__title--price">3,99 USD</span>
-          </h3>
-          <ul class="packages__list">
-            <li class="packages__item">
-              <p class="packages__item--name">Розовый фильтр</p>
-              <span class="visually-hidden">Доступно</span>
-            </li>
-            <li class="packages__item">
-              <p class="packages__item--name">Смайлики</p>
-              <span class="visually-hidden">Доступно</span>
-            </li>
-            <li class="packages__item">
-              <p class="packages__item--name">Комментарии</p>
-              <span class="visually-hidden">Недоступно</span>
-            </li>
-          </ul>
-        </section>
+        <input class="visually-hidden" type="radio" name="slider" id="slide-1">
+        <input class="visually-hidden" type="radio" name="slider" id="slide-2" checked>
+        <input class="visually-hidden" type="radio" name="slider" id="slide-3">
+        <div class="package__wrapper">
+          <table class="package__table slider__item">
+            <tbody>
+              <tr class="package__captions">
+                <th class="package__caption package__caption--empty">
+                </th>
+                <th class="package__caption">
+                  <b class="package__name">База</b>
+                  <span class="package__price">1,99 USD</span>
+                </th>
+                <th class="package__caption">
+                  <b class="package__name package__name--new">Стандарт</b>
+                  <span class="package__price">3,99 USD</span>
+                </th>
+                <th class="package__caption">
+                  <b class="package__name">Анлим</b>
+                  <span class="package__price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="package__column package__column--1">Розовый фильтр</td>
+                <td class="package__column package__column--2">
+                  <span class="package__status package__status--enabled">Розовый фильтр</span>
+                </td>
+                <td class="package__column package__column--3">
+                  <span class="package__status package__status--enabled">Розовый фильтр</span>
+                </td>
+                <td class="package__column package__column--4">
+                  <span class="package__status package__status--enabled">Розовый фильтр</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="package__column package__column--1">Смайлики</td>
+                <td class="package__column package__column--2">
+                  <span class="package__status package__status--disabled">Смайлики</span>
+                </td>
+                <td class="package__column package__column--3">
+                  <span class="package__status package__status--enabled">Смайлики</span>
+                </td>
+                <td class="package__column package__column--4">
+                  <span class="package__status package__status--enabled">Смайлики</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="package__column package__column--1">Комментарии</td>
+                <td class="package__column package__column--2">
+                  <span class="package__status package__status--disabled">Комментарии</span>
+                </td>
+                <td class="package__column package__column--3">
+                  <span class="package__status package__status--disabled">Комментарии</span>
+                </td>
+                <td class="package__column package__column--4">
+                  <span class="package__status package__status--enabled">Комментарии</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p class="packages__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <label for="slide-1" class="slider__toggle">1</label>
+          <label for="slide-2" class="slider__toggle">2</label>
+          <label for="slide-3" class="slider__toggle">3</label>
         </p>
       </section>
     </div>
