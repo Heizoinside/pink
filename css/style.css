@@ -662,6 +662,7 @@
 }
 .package {
   padding-bottom: 95px;
+  overflow: hidden;
 }
 .package__table {
   -webkit-box-sizing: border-box;
@@ -784,9 +785,9 @@
     padding-top: 20px;
     margin-left: 15px;
   }
-  #slide-1:checked ~ .packages__toggles label[for="slide-1"],
-  #slide-2:checked ~ .packages__toggles label[for="slide-2"],
-  #slide-3:checked ~ .packages__toggles label[for="slide-3"] {
+  #slide-1:checked ~ .packages__toggles .package__toggle--1,
+  #slide-2:checked ~ .packages__toggles .package__toggle--2,
+  #slide-3:checked ~ .packages__toggles .package__toggle--3 {
     background-color: transparent;
     border: 3px solid #283645;
   }
