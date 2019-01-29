@@ -86,7 +86,7 @@
     flex-direction: column;
   }
   .package__column {
-    width:276px;
+    width:81vw;
     flex-shrink: 0;
     &--1 {
       display:none;
@@ -104,7 +104,7 @@
     &--enabled,
     &--disabled {
       &::before {
-        left:228px;
+        left:94%;
       }
     }
   }
@@ -121,7 +121,7 @@
     border:3px solid #283645;
   }
   #slide-1:checked ~ .package__wrapper  {
-    transform: translateX(250px);
+    transform: translateX(90%);
     transition: 0.5s;
   }
   #slide-2:checked ~ .package__wrapper  {
@@ -129,7 +129,7 @@
     transition: 0.5s;
   }
   #slide-3:checked ~ .package__wrapper  {
-    transform: translateX(-250px);
+    transform: translateX(-90%);
     transition: 0.5s;
   }
 }
