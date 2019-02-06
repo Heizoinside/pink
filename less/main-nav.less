@@ -1,5 +1,6 @@
 .main-nav__logo  {
   display:inline-block;
+  color:#fff;
 }
 .main-nav__logo--wrapper {
   box-sizing: border-box;
@@ -106,32 +107,9 @@
     justify-content: space-between;
   }
   .main-nav__logo--wrapper {
-    padding-left:0px;
+    padding-top:22px;
+    padding-left: 0;
+    padding-bottom: 27px;
   }
 }
 /*Лого*/
-.page-header__logo {
-  display:block;
-  &--glasses {
-    display:none;
-  }
-  &--stars {
-    display:none;
-  }
-}
-@media (min-width: @tablet) {
-  .page-header__logo {
-    display:none;
-    &--glasses {
-      display:block;
-    }
-}
-}
-@media (min-width: @desktop) {
-  .page-header__logo {
-    display:none;
-    &--stars {
-      display:block;
-    }
-  }
-}

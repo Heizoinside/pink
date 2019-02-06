@@ -1,7 +1,7 @@
 .copyright {
-  display:flex;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .copyright__text {
   font-size: 14px;
@@ -12,6 +12,17 @@
   }
 }
 .copyright__link {
-  width:40px;
-  height:34px;
+  width:30px;
+  height:30px;
+  margin-top: 5px;
+  &:hover .copyright__logo {
+    fill:#283645;
+  }
+  &:active .copyright__logo {
+    fill:#283645;
+    opacity: 0.3;
+  }
+}
+.copyright__logo {
+  fill:#d22856;
 }

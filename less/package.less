@@ -56,8 +56,8 @@
       width:31px;
       height:21px;
       background: url('../img/icon-yes.svg') center no-repeat;
-      top:8px;
-      left:50%;
+      top:5px;
+      left:47%;
       margin-left: -15.5px;
     }
   }
@@ -69,7 +69,7 @@
       height:27px;
       background: url('../img/icon-no.svg') center no-repeat;
       top:3px;
-      left:50%;
+      left:47%;
       margin-left: -13.5px;
     }
   }
@@ -183,6 +183,19 @@
   .package__caption {
     padding-top: 17px;
     padding-bottom: 17px;
+  }
+  .package__status {
+    &--enabled {
+      &::before {
+        left:50%;
+      }
+    }
+    &--disabled {
+      &::before {
+        left:51%;
+        top:-2px;
+      }
+    }
   }
   .package__name {
     font-size:18px;

@@ -4,22 +4,40 @@
 @media (min-width: @tablet) {
   .research {
     display:block;
-    padding-bottom: 43px;
+    padding-bottom: 70px;
   }
   .research__inner {
     display:flex;
     justify-content: space-between;
-    width: 620px;
+    padding-bottom: 20px;
     margin:0 auto;
-  }
-  .research__timer {
-    margin-left:0;
-    padding-top:48px;
-    width:238px;
-  }
-  .research__timer svg {
-    width:238px;
-    height:276px;
+    position: relative;
+    &::before {
+      content:"";
+      position: absolute;
+      background: url("../img/timer.svg") center no-repeat;
+      background-size:239px 276px;
+      width:239px;
+      height:276px;
+      bottom:0;
+      left:0;
+    }
+    &::after {
+      content:"24";
+      position: absolute;
+      font-size: 96px;
+      line-height: 165px;
+      color:#d22856;
+      font-family: inherit;
+      font-weight: bold;
+      width:175px;
+      height:175px;
+      border: 14px solid #d22856;
+      border-radius: 50%;
+      text-align: center;
+      bottom:16px;
+      left:18px;
+    }
   }
   .research__wrapper {
     width:310px;
@@ -49,32 +67,32 @@
     box-shadow: inset 0 -1px 0 #d22856;
     display:inline-block;
   }
-  .research__timer text {
-    fill:#d22856;
-    font-family: "Open Sans", sans-serif;
-    font-size: 120px;
-    font-weight: bold;
-  }
 }
 @media (min-width: @desktop) {
   .research {
     padding-top:32px;
     background-color: #f2f2f2;
-    padding-bottom:60px;
+    padding-bottom:70px;
   }
   .research__inner {
     width:auto;
     margin:auto;
-  }
-  .research__timer {
-    width: 299px;
-    padding-top:0px;
-    margin:0;
-    margin-left: 10px;
-  }
-  .research__timer svg {
-    width:300px;
-    height:345px;
+    padding-bottom: 45px;
+    &::before {
+      width:299px;
+      height:345px;
+      background-size: 299px 345px;
+      left:15px;
+    }
+    &::after {
+      width:219px;
+      height:219px;
+      font-size:120px;
+      line-height: 205px;
+      border: 17px solid #d22856;
+      left:38px;
+      bottom:23px;
+    }
   }
   .research__wrapper {
     width:574px;
