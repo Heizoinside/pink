@@ -54,13 +54,13 @@
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </header>
-  <main class="page-form container">
+  <main class="page-form">
     <section class="form">
       <div class="form__description-wrapper">
         <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <p class="form__description form__description--hidden">Пожалуйста, заполните форму ниже:</p>
         </p>
       </div>
-      <form action="/" method="post">
+      <form action="/" method="post" class="container">
         <div class="form__wrapper">
           <div class="form__block form__block--ititials">
             <label class="form__group">
@@ -76,68 +76,84 @@
               <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </label>
           </div>
-          <fieldset class="form__block form__block--achievments">
-            <legend class="form__title form__title--achievments">Ваши безбашенные достижения в путешествии</legend>
-            <label class="form__interface form__interface--achievments">
-              <input class="form__checkbox visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
-              <span class="form__indicator form__indicator--checkbox">Сделал селфи с акулой</span>
-            </label>
-            <label class="form__interface form__interface--achievments">
-              <input class="form__checkbox visually-hidden" type="checkbox" id="tan" name="tan" checked>
-              <span class="form__indicator form__indicator--checkbox">Обгорел на пляже</span>
-            </label>
-            <label class="form__interface form__interface--achievments">
-              <input class="form__checkbox visually-hidden" type="checkbox" id="celebrity" name="celebrity">
-              <span class="form__indicator form__indicator--checkbox">Видел Чака Норриса</span>
-            </label>
-            <label class="form__interface form__interface--achievments">
-              <input class="form__checkbox visually-hidden" type="checkbox" id="souvenir" name="souvenir">
-              <span class="form__indicator form__indicator--checkbox">Накупил сувениров</span>
-            </label>
-            <label class="form__interface form__interface--achievments">
-              <input class="form__checkbox visually-hidden" type="checkbox" id="tower" name="tower" checked>
-              <span class="form__indicator form__indicator--checkbox">Удержал башню</span>
-            </label>
-            <label class="form__interface form__interface--achievments">
-              <input class="form__checkbox visually-hidden" type="checkbox" id="rout" name="rout">
-              <span class="form__indicator form__indicator">Разгромил отель</span>
-            </label>
-          </fieldset>
-          <fieldset class="form__block form__block--contacts">
-            <legend class="form__title form__title--contacts">Контактная информация</legend>
-            <label class="form__group form__group--phone">
-              <span class="form__group-title form__group-title--contacts">Номер телефона</span>
-              <input class="form__input form__input--contacts" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="form__group form__group--email">
-              <span class="form__group-title form__group-title--contacts">Адрес почты</span>
-              <input class="form__input form__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *">
-            </label>
-          </fieldset>
-          <fieldset class="form__block form__block--os">
-            <legend class="form__title form__title--os">С каким приложением путешествовали?</legend>
-            <label class="form__interface form__interface--os">
-              <input class="form__radio visually-hidden" type="radio" id="iOS" name="platform">
-              <span class="form__indicator form__indicator--os">Pink для iOS</span>
-            </label>
-            <label class="form__interface form__interface--os">
-              <input class="form__radio visually-hidden" type="radio" id="android" name="platform">
-              <span class="form__indicator form__indicator--os">Pink на Android</span>
-            </label>
-            <label class="form__interface form__interface--os">
-              <input class="form__radio visually-hidden" type="radio" id="windows-phone" name="platform">
-              <span class="form__indicator form__indicator--os">Windows Phone</span>
-            </label>
-          </fieldset>
+          <div class="form__block form__block--achievments">
+            <fieldset class="form__border form__border--achievments">
+              <legend class="form__title form__title--achievments">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__flex">
+                <div class="form__flex--1">
+                  <label class="form__interface form__interface--achievments">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
+                    <span class="form__indicator form__indicator--checkbox">Сделал селфи с акулой</span>
+                  </label>
+                  <label class="form__interface form__interface--achievments">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="tan" name="tan" checked>
+                    <span class="form__indicator form__indicator--checkbox">Обгорел на пляже</span>
+                  </label>
+                </div>
+                <div class="form__flex--2">
+                  <label class="form__interface form__interface--achievments">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="celebrity" name="celebrity">
+                    <span class="form__indicator form__indicator--checkbox">Видел Чака Норриса</span>
+                  </label>
+                  <label class="form__interface form__interface--achievments">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="souvenir" name="souvenir">
+                    <span class="form__indicator form__indicator--checkbox">Накупил сувениров</span>
+                  </label>
+                </div>
+                <div class="form__flex--3">
+                  <label class="form__interface form__interface--achievments">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="tower" name="tower" checked>
+                    <span class="form__indicator form__indicator--checkbox">Удержал башню</span>
+                  </label>
+                  <label class="form__interface form__interface--achievments">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="rout" name="rout">
+                    <span class="form__indicator form__indicator--checkbox">Разгромил отель</span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__block form__block--contacts">
+            <fieldset class="form__border form__border--contacts">
+              <legend class="form__title form__title--contacts">Контактная информация</legend>
+              <label class="form__group form__group--phone">
+                <span class="form__group-title form__group-title--contacts">Номер телефона</span>
+                <input class="form__input form__input--contacts" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="form__group form__group--email">
+                <span class="form__group-title form__group-title--contacts">Адрес почты</span>
+                <input class="form__input form__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *">
+              </label>
+            </fieldset>
+          </div>
+          <div class="form__block form__block--os">
+            <fieldset class="form__border form__border--os">
+              <legend class="form__title form__title--os">С каким приложением путешествовали?</legend>
+              <label class="form__interface form__interface--os">
+                <input class="form__radio visually-hidden" type="radio" id="iOS" name="platform">
+                <span class="form__indicator form__indicator--os">Pink для iOS</span>
+              </label>
+              <label class="form__interface form__interface--os">
+                <input class="form__radio visually-hidden" type="radio" id="android" name="platform">
+                <span class="form__indicator form__indicator--os">Pink на Android</span>
+              </label>
+              <label class="form__interface form__interface--os">
+                <input class="form__radio visually-hidden" type="radio" id="windows-phone" name="platform">
+                <span class="form__indicator form__indicator--os">Windows Phone</span>
+              </label>
+            </fieldset>
+          </div>
+          <div class="form__block form__block--feedback">
+            <fieldset class="form__border form__border--feedback">
+              <legend class="form__title form__title--feedback">Опишите свои эмоции</legend>
+              <textarea class="form__feedback" name="feedback" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+          </div>
         </div>
-        <fieldset class="form__block form__block--feedback">
-          <legend class="form__title form__title--feedback">Опишите свои эмоции</legend>
-          <textarea class="form__feedback" name="feedback" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
         <button type="submit" class="form__button button__submit">Отправить форму</button>
         <p class="form__required">
           <span class="form__star">*</span>
-          <b class="form__text">— обязательные поля</b>
+          <b class="form__text">— обязательные <span>для заполнения</span> поля</b>
         </p>
       </form>
     </section>
