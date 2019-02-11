@@ -1,0 +1,67 @@
+.button {
+  font-size:18px;
+  line-height:18px;
+  color:#ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  width: 275px;
+  display:block;
+  border-radius: 30px;
+  padding:16px 0;
+  font-style: "Open Sans", "Arial", sans-serif;
+  background-color: transparent;
+  &--download {
+    border:3px solid #fff;
+    margin-top:-22px;
+    margin-bottom:20px;
+  }
+  &--post {
+    border:3px solid @pink;
+    color:@pink;
+    margin-top:37px;
+  }
+  &--cancel {
+    border:3px solid @grey;
+    color:@grey;
+    margin-top:10px;
+  }
+}
+.button__submit {
+  width:280px;
+  background-color: #2aab6d;
+  font-size:18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#fff;
+  border:none;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.button__like {
+  width:13px;
+  height:13px;
+  font-size:0;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor:pointer;
+  background: url("../img/icon-heart.svg") center no-repeat;
+}
+@media (min-width:@tablet) {
+  .button--download {
+    width:294px;
+    margin-top: 30px;
+    margin-bottom:0;
+  }
+  .button__submit {
+    width:300px;
+  }
+}
+@media (min-width:@desktop) {
+  .button--download {
+    font-size:21px;
+
+  }
+}
