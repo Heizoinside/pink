@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.min.js"></script>
 </head>
 
 <body>
@@ -242,44 +244,56 @@
     </div>
     <section class="user__post">
       <h2 class="visually-hidden">Опубликуйте свою фотографию</h2>
-      <figure class="user__picture">
-        <picture>
-          <source media="(min-width: 940px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg.jpg 2x" />
-          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" />
-          <img class="post__picture-image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
-        </picture>
-      </figure>
-      <ul class="user__list user__list--edit">
-        <li class="user-post__item">
-          <button class="user-post__button user-post__button--active" type="button">
-            <svg class="user__edit user__edit--scale">
-              <use xlink:href="img/sprite.svg#scale"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="user-post__item">
-          <button class="user-post__button" type="button">
-            <svg class="user__edit user__edit--fill">
-              <use xlink:href="img/sprite.svg#fill"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="user-post__item">
-          <button class="user-post__button" type="button">
-            <svg class="user__edit user__edit--brightness">
-              <use xlink:href="img/sprite.svg#brightness"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-      <div class="range-field">
-        <div class="range-field__bar">
-          <button class="range-field__toggle"></button>
-        </div>
-      </div>
-      <div class="user__buttons">
-        <button class="button button--post">Запостить</button>
-        <button class="button button--cancel">Отмена</button>
+      <div class="user__post-flex">
+        <figure class="user__picture">
+          <picture>
+            <source media="(min-width: 940px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg.jpg 2x" />
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" />
+            <img class="post__picture-image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
+          </picture>
+        </figure>
+        <section class="user__options user__options--edit">
+          <p class="user__option user__option--scale">
+            <button class="user__toggle user__toggle--active" type="button">
+              <svg class="user__edit user__edit--scale">
+                <use xlink:href="img/sprite.svg#scale"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="range-field range-field--mobile">
+            <div class="range-field__bar">
+              <button class="range-field__toggle range-field__toggle--scale"></button>
+            </div>
+          </div>
+          <p class="user__option user__option--fill">
+            <button class="user__toggle" type="button">
+              <svg class="user__edit user__edit--fill">
+                <use xlink:href="img/sprite.svg#fill"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="range-field range-field--mobile">
+            <div class="range-field__bar">
+              <button class="range-field__toggle range-field__toggle--fill"></button>
+            </div>
+          </div>
+          <p class="user__option user__option--brightness">
+            <button class="user__toggle" type="button">
+              <svg class="user__edit user__edit--brightness">
+                <use xlink:href="img/sprite.svg#brightness"></use>
+              </svg>
+            </button>
+          </p>
+          <div class="range-field">
+            <div class="range-field__bar">
+              <button class="range-field__toggle range-field__toggle--brightness"></button>
+            </div>
+          </div>
+          <div class="user__buttons">
+            <button class="button button--post">Запостить</button>
+            <button class="button button--cancel">Отмена</button>
+          </div>
+        </section>
       </div>
     </section>
   </main>

@@ -50,11 +50,6 @@
   background: url("../img/icon-heart.svg") center no-repeat;
 }
 @media (min-width:@tablet) {
-  .button--download {
-    width:294px;
-    margin-top: 30px;
-    margin-bottom:0;
-  }
   .button__submit {
     width:300px;
   }
@@ -62,10 +57,31 @@
     width:16px;
     height:16px;
   }
+  .button {
+    &--download {
+      width:294px;
+      margin-top: 30px;
+      margin-bottom:0;
+    }
+    &--post {
+      width:260px;
+    }
+    &--cancel {
+      width:260px;
+      margin-top: 22px;
+    }
+  }
 }
 @media (min-width:@desktop) {
-  .button--download {
-    font-size:21px;
+  .button {
+    &--download {
+      font-size:21px;
+    }
+    &--cancel,
+    &--post {
+      width:183px;
+      margin:0;
+    }
   }
   .button__like {
     width:16px;

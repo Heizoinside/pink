@@ -39,6 +39,8 @@
     "posthtml-include": "^1.2.0"
   },
   "dependencies": {
-    "del": "^3.0.0"
+    "del": "^3.0.0",
+    "picturefill": "^3.0.3",
+    "svgxuse": "^1.2.6"
   }
 }
