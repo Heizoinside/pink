@@ -1,0 +1,78 @@
+.downloads {
+  background-color: #1d2631;
+}
+.downloads__inner {
+  background-color: #1d2631;
+  position: relative;
+  margin:0 auto;
+  padding-top: 20px;
+}
+.downloads--wrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.downloads__title {
+  margin:0;
+  padding:0;
+  font-size:0;
+}
+.downloads__list {
+margin:0;
+padding:0;
+list-style: none;
+}
+.downloads__text {
+line-height: 24px;
+font-weight: 300;
+color:#c3c5c8;
+text-align: center;
+padding:0;
+margin:0;
+padding-top:13px;
+padding-bottom:30px;
+}
+@media (min-width: @tablet) {
+  .downloads__title {
+    font-size:40px;
+    line-height: 48px;
+    font-weight: 300;
+    width:210px;
+    text-align: center;
+    color:#fff;
+  }
+  .downloads__inner {
+    padding:0;
+  }
+  .downloads--wrapper {
+    min-height: 410px;
+    position: absolute;
+    bottom:113px;
+    left:5px;
+    width:50%;
+    background-color: transparent;
+  }
+  .downloads__text {
+    font-size:18px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-bottom:0;
+
+  }
+}
+@media (min-width: @desktop) {
+  .downloads__title {
+    font-size:50px;
+    line-height: 58px;
+    width:240px;
+    padding-bottom:5px;
+  }
+  .downloads--wrapper {
+    min-height: 510px;
+    width:300px;
+    left:20px;
+    bottom:122px;
+  }
+}

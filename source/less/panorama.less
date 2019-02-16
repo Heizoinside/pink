@@ -1,0 +1,135 @@
+.panorama {
+  margin-top: 24px;
+}
+.panorama__picture {
+  padding:0;
+  margin:0 auto;
+  width:320px;
+  height:137px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: bold;
+    font-size:12px;
+    line-height: 24px;
+    padding:6px 20px;
+    background-color: #d22856;
+    z-index: 2;
+    right:20px;
+    top:0;
+  }
+}
+.panorama__review {
+  padding:0 18px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  margin:0;
+  width:280px;
+  margin:0 auto;
+  background-color:#f2f2f2;
+  line-height: 24px;
+}
+.panorama__author {
+  margin:0;
+  padding:0;
+}
+.panorama__time {
+  font-weight: 300;
+}
+.panorama__text {
+  margin:0;
+  padding:0;
+}
+.panorama__action {
+  display:flex;
+  align-items: center;
+  margin-top:13px;
+}
+.panorama__stats {
+  text-decoration: none;
+  color:@pink;
+  margin-left: 17px;
+  font-size:12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.panorama__picture img {
+  display: block;
+  max-width: 1200px;
+  height: auto;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+
+}
+@media(min-width:@tablet) {
+  .panorama {
+    margin-top: 27px;
+  }
+  .panorama__picture {
+    width:660px;
+    height: 509px;
+    &::before {
+      top:57px;
+    }
+  }
+  .panorama__review {
+    width:620px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+  .panorama__author {
+    order:1;
+    margin-right: auto;
+    margin-left: 10px;
+  }
+  .panorama__text {
+    order:3;
+    margin-left: 9px;
+  }
+  .panorama__action {
+    order:2;
+    margin:0;
+    margin-left: auto;
+    margin-right:9px;
+  }
+  .panorama__like-button {
+    order:2;
+  }
+  .panorama__stats {
+    order:1;
+    margin-right: 16px;
+  }
+}
+@media(min-width:@desktop) {
+  .panorama {
+    margin-top: 40px;
+  }
+  .panorama__picture {
+    width:1200px;
+    height: 509px;
+    &::before {
+      top:55px;
+      right:130px;
+    }
+  }
+  .panorama__review {
+    width:940px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .panorama__action {
+    order:2;
+    margin:0;
+    margin-left: auto;
+    margin-right:12px;
+  }
+}
