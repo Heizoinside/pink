@@ -1,28 +1,6 @@
 .post {
   margin-top: 26.5px;
 }
-.post__panorama {
-  padding:0;
-  margin:0 auto;
-  width:320px;
-  height:137px;
-  position: relative;
-  z-index: 1;
-  &::before {
-    content: "Панорама дня";
-    position: absolute;
-    text-transform: uppercase;
-    color:#fff;
-    font-weight: bold;
-    font-size:12px;
-    line-height: 24px;
-    padding:6px 20px;
-    background-color: #d22856;
-    z-index: 2;
-    right:20px;
-    top:0;
-  }
-}
 .post__picture {
   width:280px;
   height:180px;
@@ -60,4 +38,69 @@
   margin-left: 17px;
   font-size:12px;
   line-height: 24px;text-transform: uppercase;
+}
+@media(min-width: @tablet) {
+  .post {
+    margin-top: 19px;
+  }
+  .post__flex {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:620px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .post__picture {
+    width:300px;
+    height:300px;
+  }
+  .post__review {
+    padding:0 28px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin:0;
+    width:300px;
+    min-height: 155px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    justify-content: space-between;
+  }
+  .post__text {
+    margin:0;
+    padding:0;
+  }
+  .post__action {
+    display:flex;
+    align-items: center;
+  }
+  .post__stats {
+    order:1;
+    margin-right: auto;
+    margin-left: 0px;
+  }
+  .post__like-button {
+    order:2;
+    margin-left: auto;
+  }
+}
+@media(min-width: @desktop) {
+  .post__flex {
+    width:940px;
+    margin-top: -5px;
+  }
+  .post__picture {
+    width:300px;
+    height:400px;
+  }
+  .post {
+    margin-top: 54px;
+  }
+  .post__review {
+    padding:0 28px;
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
 }
