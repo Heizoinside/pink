@@ -6,6 +6,16 @@
   position: relative;
   z-index: 100;
 }
+.site-list__link {
+  color:@white;
+  text-decoration: none;
+  &:hover:not(&--active) {
+    color:@pink;
+  }
+  &:active:not(&--active) {
+    color:#5d354e;
+  }
+}
 @media (max-width:@except-desktop) {
   .main-nav--opened .site-list,
   .main-nav--nojs .site-list {
@@ -23,8 +33,6 @@
   .site-list__link {
     font-size:18px;
     line-height: 32px;
-    color:#fff;
-    text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -47,10 +55,15 @@
     padding-top:40px;
     flex-wrap: wrap;
   }
-  .site-list .site-list__link {
+  .site-list__link {
     font-size: 18px;
     line-height: 18px;
-    text-decoration: none;
-    color:#fff;
+    padding-bottom: 5px;
+    &:active:not(&--active) {
+      color:@dark-gray;
+    }
+    &--active {
+      box-shadow: 0 2px 0 @white;
+    }
   }
 }

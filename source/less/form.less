@@ -56,23 +56,31 @@
 }
 
 .form__input {
-  width: 280px;
-  border: 2px solid @light-pink;
-  border-radius: 3px;
+  padding: 14.5px 20px;
+  margin-top: 5px;
+}
+.form__input,
+.form__feedback {
+  outline: 2px solid @light-pink;
+  border:none;
   font-family: inherit;
   line-height: 30px;
   font-size: 18px;
   color: @dark-blue;
+  width: 280px;
   box-sizing: border-box;
-  padding: 14.5px 20px;
-  margin-top: 5px;
-
   &::placeholder {
     color: @dark-blue;
     opacity: 1;
   }
+  &:hover {
+    outline-color:@dark-blue;
+  }
+  &:active,
+  &:focus {
+    outline-color:@pink;
+  }
 }
-
 .form__title {
   color: @pink;
   text-transform: uppercase;
@@ -100,7 +108,6 @@
   position: relative;
   width:280px;
   padding:0;
-
   &::before {
     content: "";
     position: absolute;
@@ -112,11 +119,16 @@
     top: -5px;
     left: 0;
   }
-
+  &:hover::before {
+    border-color:@dark-blue;
+  }
+  &:active::before,
+  &:focus::before {
+    border-color:@pink;
+  }
   &--achievments {
     margin-bottom: 52px;
   }
-
   &--os {
     margin-bottom: 45px;
     &::before {
@@ -155,19 +167,7 @@
 }
 
 .form__feedback {
-  border: 2px solid @light-pink;
-  border-radius: 3px;
-  font-family: inherit;
-  line-height: 30px;
-  font-size: 18px;
-  color: @dark-blue;
   padding: 14px 20px;
-  box-sizing: border-box;
-  width:280px;
-  &::placeholder {
-    color: @dark-blue;
-    opacity: 1;
-  }
 }
 .form__button {
   padding:20px 0;
@@ -278,6 +278,7 @@
   }
   .form__group {
     margin-bottom: 48px;
+
     &:last-child {
       margin-bottom:0;
     }
@@ -303,8 +304,8 @@
         content: "";
         position: absolute;
         width:62px;
-        height:62px;
-        top:0;
+        height:63px;
+        top:-2px;
         right:0;
         background-color: @light-pink;
       }
@@ -444,6 +445,9 @@
     width:340px;
     &--name {
       width:380px;
+    }
+    &--contacts {
+      width:311px;
     }
   }
   .form__interface {

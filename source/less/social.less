@@ -8,19 +8,15 @@
   height:45px;
   border-radius: 50%;
   border:3px solid #e9ebec;
-  &--tw {
-    background-image: url('../img/icon-twitter.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:@pink;
+  &:hover {
+    border-color: @dark-blue;
   }
-  &--fb {
-    background-image: url('../img/icon-facebook.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &--yt {
-    background-image: url('../img/icon-youtube.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+  &:active {
+    border-color:#e9ebec;
+    color:#f1becc;
   }
 }

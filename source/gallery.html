@@ -18,7 +18,7 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__logo--wrapper">
             <a href="#" class="main-nav__logo">
-              <svg class="logo logo__header logo--mobile" width="75" height="23">
+              <svg class="logo logo__header logo--mobile" width="75" height="22">
                 <use xlink:href="img/sprite.svg#logo-word"></use>
               </svg>
               <svg class="logo logo__header logo--tablet" width="147" height="40">
@@ -32,15 +32,20 @@
               </svg>
             </a>
           </div>
-          <button class="main-nav__toggle" tabindex="0">
-            <span class="visually-hidden">Открыть меню</span>
+          <button class="main-nav__toggle" tabindex="0" type="button">
+            <svg class="main-nav__burger" width="147" height="50">
+              <use xlink:href="img/sprite.svg#menu-burger"></use>
+            </svg>
+            <svg class="main-nav__cross" width="147" height="50">
+              <use xlink:href="img/sprite.svg#menu-cross"></use>
+            </svg>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Фотографии</a>
+              <a class="site-list__link site-list__link--active">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Конкурс</a>
@@ -79,7 +84,7 @@
           <p class="panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="panorama__action">
             <button class="button__like panorama__like-button" type="button" title="Мне нравится">Мне нравится</button>
-            <a class="panorama__stats" href="#">
+            <a class="panorama__stats button__stats" href="#">
               Hравится: <span class="post__stats-count">215</span>
             </a>
           </div>
@@ -105,7 +110,7 @@
             </div>
             <div class="post__action">
               <button class="button__like post__like-button" type="button" title="Мне нравится">Мне нравится</button>
-              <a class="post__stats" href="#">
+              <a class="post__stats button__stats" href="#">
                 Hравится: <span class="post__stats-count">356</span>
               </a>
             </div>
@@ -130,7 +135,7 @@
             </div>
             <div class="post__action">
               <button class="button__like post__like-button" type="button" title="Мне нравится">Мне нравится</button>
-              <a class="post__stats" href="#">
+              <a class="post__stats button__stats" href="#">
                 Hравится: <span class="post__stats-count">666</span>
               </a>
             </div>
@@ -155,7 +160,7 @@
             </div>
             <div class="post__action">
               <button class="button__like post__like-button" type="button" title="Мне нравится">Мне нравится</button>
-              <a class="post__stats" href="#">
+              <a class="post__stats button__stats" href="#">
                 Hравится: <span class="post__stats-count">215</span>
               </a>
             </div>
@@ -180,7 +185,7 @@
             </div>
             <div class="post__action">
               <button class="button__like post__like-button" type="button" title="Мне нравится">Мне нравится</button>
-              <a class="post__stats" href="#">
+              <a class="post__stats button__stats" href="#">
                 Hравится: <span class="post__stats-count">4</span>
               </a>
             </div>
@@ -205,7 +210,7 @@
             </div>
             <div class="post__action">
               <button class="button__like post__like-button" type="button" title="Мне нравится">Мне нравится</button>
-              <a class="post__stats" href="#">
+              <a class="post__stats button__stats" href="#">
                 Hравится: <span class="post__stats-count">150</span>
               </a>
             </div>
@@ -230,7 +235,7 @@
             </div>
             <div class="post__action">
               <button class="button__like post__like-button" type="button" title="Мне нравится">Мне нравится</button>
-              <a class="post__stats" href="#">
+              <a class="post__stats button__stats" href="#">
                 Hравится: <span class="post__stats-count">2560</span>
               </a>
             </div>
@@ -300,15 +305,12 @@
   <footer class="page-footer page-footer--gallery container">
     <div class="page-footer__logo">
       <a href="#" class="page-footer__logo-link">
-        <svg class="logo logo__footer logo--mobile" width="147" height="40">
-          <use xlink:href="img/sprite.svg#logo-with-glasses"></use>
-        </svg>
         <svg class="logo logo__footer logo--tablet" width="147" height="40">
           <use xlink:href="img/sprite.svg#logo-with-glasses"></use>
         </svg>
-        <svg class="logo logo__footer logo--desktop" width="147" height="50">
+        <svg class="logo logo__footer logo--desktop" width="147" height="40">
           <use xlink:href="img/sprite.svg#logo-with-stars"></use>
-          <svg class="logo__stars logo__stars--footer" width="147" height="50">
+          <svg class="logo__stars logo__stars--footer" width="147" height="40">
             <use xlink:href="img/sprite.svg#logo-stars"></use>
           </svg>
         </svg>
@@ -317,12 +319,21 @@
     <div class="page-footer__socials socials">
       <a href="#" class="social social--tw">
         <span class="visually-hidden">Twitter</span>
+        <svg class="social-icon" width="17.5" height="14.663">
+          <use xlink:href="img/sprite.svg#icon-tw"></use>
+        </svg>
       </a>
       <a href="#" class="social social--fb">
         <span class="visually-hidden">Facebook</span>
+        <svg class="social-icon" width="8.673" height="18.944">
+          <use xlink:href="img/sprite.svg#icon-fb"></use>
+        </svg>
       </a>
       <a href="#" class="social social--yt">
         <span class="visually-hidden">Youtube</span>
+        <svg class="social-icon" width="14.64" height="13.96">
+          <use xlink:href="img/sprite.svg#icon-yt"></use>
+        </svg>
       </a>
     </div>
     <div class="page-footer__copyright copyright">

@@ -20,7 +20,7 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__logo--wrapper">
             <a href="#" class="main-nav__logo">
-              <svg class="logo logo__header logo--mobile" width="75" height="23">
+              <svg class="logo logo__header logo--mobile" width="75" height="22">
                 <use xlink:href="img/sprite.svg#logo-word"></use>
               </svg>
               <svg class="logo logo__header logo--tablet" width="147" height="40">
@@ -34,8 +34,13 @@
               </svg>
             </a>
           </div>
-          <button class="main-nav__toggle" tabindex="0">
-            <span class="visually-hidden">Открыть меню</span>
+          <button class="main-nav__toggle" tabindex="0" type="button">
+            <svg class="main-nav__burger" width="147" height="50">
+              <use xlink:href="img/sprite.svg#menu-burger"></use>
+            </svg>
+            <svg class="main-nav__cross" width="147" height="50">
+              <use xlink:href="img/sprite.svg#menu-cross"></use>
+            </svg>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -112,7 +117,7 @@
             <p class="research__text">
               Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
             </p>
-            <a href="#" class="research__link">Узнать больше об исследовании</a>
+            <a href="#" class="button__link research__link">Узнать больше об исследовании</a>
           </div>
         </div>
       </div>
@@ -224,7 +229,7 @@
           </li>
           <li class="contacts__item contacts__item--email">
             <b class="contacts__name">Пишите:</b>
-            <p class="contacts__text">mail@htmlacademy.ru</p>
+            <a href="mail@htmlacademy.ru" class="button__link contacts__text">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item contacts__item--adress">
             <b class="contacts__name">Приезжайте в гости:</b>
@@ -255,12 +260,21 @@
     <div class="page-footer__socials socials">
       <a href="#" class="social social--tw">
         <span class="visually-hidden">Twitter</span>
+        <svg class="social-icon" width="17.5" height="14.663">
+          <use xlink:href="img/sprite.svg#icon-tw"></use>
+        </svg>
       </a>
       <a href="#" class="social social--fb">
         <span class="visually-hidden">Facebook</span>
+        <svg class="social-icon" width="8.673" height="18.944">
+          <use xlink:href="img/sprite.svg#icon-fb"></use>
+        </svg>
       </a>
       <a href="#" class="social social--yt">
         <span class="visually-hidden">Youtube</span>
+        <svg class="social-icon" width="14.64" height="13.96">
+          <use xlink:href="img/sprite.svg#icon-yt"></use>
+        </svg>
       </a>
     </div>
     <div class="page-footer__copyright copyright">
