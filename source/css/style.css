@@ -2193,6 +2193,13 @@
     background-color: transparent;
     position: absolute;
     top: 219px;
+    cursor: pointer;
+  }
+  .review__arrow:hover {
+    border-color: #7e868f;
+  }
+  .review__arrow:active {
+    border-color: #e9ebec;
   }
   .review__arrow--left {
     left: 25px;

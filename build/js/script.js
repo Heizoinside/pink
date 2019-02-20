@@ -13,9 +13,10 @@ navToggle.addEventListener('click', function() {
 });
 
 var editToggle = document.querySelectorAll('.user__toggle');
-editToggle.addEventListener('click', function() {
-  for (var i = 0; i < editToggle.length; i++) {
-    editToggle[i] = editToggle.classList.add('user__toggle--active');
-    console.log("obj");
-  }
-};
+
+  editToggle.forEach(c => {
+    c.addEventListener('click', () => {
+      editToggle.forEach(s => s.classList.remove('user__toggle--active'));
+      c.classList.add('user__toggle--active');
+    })
+  });
