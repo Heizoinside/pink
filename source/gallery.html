@@ -267,7 +267,7 @@
           </p>
           <div class="range-field range-field--mobile">
             <div class="range-field__bar">
-              <button class="range-field__toggle range-field__toggle--scale"></button>
+              <button class="range-field__toggle"></button>
             </div>
           </div>
           <p class="user__option user__option--fill">
@@ -279,7 +279,7 @@
           </p>
           <div class="range-field range-field--mobile">
             <div class="range-field__bar">
-              <button class="range-field__toggle range-field__toggle--fill"></button>
+              <button class="range-field__toggle"></button>
             </div>
           </div>
           <p class="user__option user__option--brightness">
@@ -291,7 +291,7 @@
           </p>
           <div class="range-field">
             <div class="range-field__bar">
-              <button class="range-field__toggle range-field__toggle--brightness"></button>
+              <button class="range-field__toggle"></button>
             </div>
           </div>
           <div class="user__buttons">
@@ -345,20 +345,7 @@
       </a>
     </div>
   </footer>
-  <script>
-    var mainNav = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    mainNav.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (mainNav.classList.contains("main-nav--closed")) {
-        mainNav.classList.remove("main-nav--closed");
-        mainNav.classList.add('main-nav--opened');
-      } else {
-        mainNav.classList.remove("main-nav--opened");
-        mainNav.classList.add('main-nav--closed');
-      }
-    });
+  <script src="js/script.js" async>
   </script>
 </body>
 

@@ -31,8 +31,12 @@
   border:none;
   background-color: transparent;
   cursor: pointer;
-  &--active svg {
-    fill:@pink;
+  color: #b5b9be;
+  &--active {
+    color:@pink;
+  }
+  &:hover:not(&--active) {
+    color:#8d949b;
   }
 }
 .user__edit {
